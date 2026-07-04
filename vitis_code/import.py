@@ -5,7 +5,7 @@ from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 import pathlib
 import os
-data_dir = pathlib.Path('/kaggle/input/datasets/huynhthethien/radarcommunsignaldata2026train')
+data_dir = pathlib.Path('/kaggle/input/datasets/radarcommunsignaldata2026train')
 transform = transforms.Compose([
     transforms.Grayscale(num_output_channels=1),
     transforms.Resize((64, 64)),
